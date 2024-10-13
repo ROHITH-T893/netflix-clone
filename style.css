@@ -1,0 +1,432 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: white;
+    background-color: black;
+    width: 100%;
+    overflow-x: hidden;
+   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%);
+    opacity: 0.8;
+}
+.main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: inset 0 5px 50px black,inset 0 -5px 50px black;
+}
+.nav{
+    position: absolute;
+    top: -40px;
+    padding: 0px 30px;
+    width: 78%;
+    display: flex;
+    justify-content:center ;
+}
+.nav .n{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+select{
+    background-color:rgba(0, 0, 0, 0.381);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 5px;
+    margin-right: 3px;
+}
+.nav button{
+    background-color: red;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    padding: 9px 17px;
+    margin-left: 3px;
+}
+.in{
+    margin-left: 10px;
+}
+.con{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 590px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   text-align: center;
+}
+.con h1{
+    font-size: 60px;
+    font-weight: 900;
+}
+.con p{
+    font-size:medium;
+    margin: 10px;
+}
+.input{
+    display: flex;
+}
+.input input{
+    width: 400px;
+    height: 40px;
+    padding: 15px 20px; 
+    background-color: rgba(0, 0, 0, 0.411);
+    border: 1px solid rgb(95, 89, 89);
+    border-radius: 5px;
+    margin: 2px 5px;
+    font-weight: bolder;
+    font-size: larger;
+}
+.input button{
+    background-color: red;
+    color: white;
+    font-weight: 700;
+    border: none;
+    height: 70px;
+    padding: 15px 20px;
+    width: 350px;
+    border-radius: 5px;
+    margin-left: 3px;
+    font-weight: bolder;
+    font-size: larger;
+}
+.trand-sec{
+    width: 100vw;
+    position: absolute;
+    height: 320vh;
+    display: flex;
+    justify-content: center;
+   
+    z-index: 10000;
+}
+.cir{
+   
+    box-sizing: border-box;
+    position: absolute;
+    height: 200px;
+    width: 180%;
+    left: -40%;
+    top: -30px;
+    margin: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: solid .25rem transparent;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    border-bottom: none;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+.cir:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin-top: -.25rem;
+    border-radius: inherit;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+}
+.trand{
+    margin-top: 70px;
+    width: 80%;
+    z-index: 10000;
+    
+}
+.trand .input{
+    gap: 20px;
+}
+.trand h1{
+    margin-bottom: 20px;
+}
+.movie{
+    width: 100%;
+    height: 300px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.mcon{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.scroll{
+    width: 90%;
+    height: 340px;
+    overflow-x: scroll;
+    display: flex;
+    align-items: center;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #888 #f0f0f0;
+    margin-bottom: 70px;
+}
+.card{
+    margin: 20px;
+}
+.card img{
+    border-radius: 5px;
+}
+.card img:hover{
+    transform: scale(1.2);
+}
+.scroll::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scroll::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+.recard{
+    
+    display: flex;
+    width: 100%;
+    
+}
+.re{
+    color: #f0f0f0;
+    font-weight: 300;
+    
+    width: 250px;
+    height: 280px;
+    background:linear-gradient(160deg,#1c0943fe 40%,#1f1235,#1f1235,#340808f4) ;
+    padding: 20px;
+    border-radius: 6px;
+    margin: 10px;
+
+}
+.re h2{
+    margin-bottom: 10px;
+    
+}
+.re p{
+    color: #bebcbce2;
+    font-weight: 100;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.join{
+    padding: 20px;
+    width: 100%;
+}
+#mcq{
+    height: 100vh;
+    margin-top: 10px;
+}
+#mcq details{
+    background-color: #2D2D2D;
+    margin: 20px;
+    padding: 3px 10px;
+}
+#mcq details p{
+    padding: 20px;
+}
+.foot{
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+.foot .mail{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.mail{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.mail .input{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.fotcon{
+    margin-top: 20px;
+    list-style: none;
+    color: #1f1235;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  
+
+}
+.fotcon li{
+   width: 25%;
+   height: 30px;
+}
+.fotcon li a{
+   
+        /* Font & Text */
+        font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 21px;
+        text-decoration: underline solid rgba(255, 255, 255, 0.7);
+        text-align: left;
+        text-indent: 0px;
+        text-transform: none;
+        vertical-align: baseline;
+        white-space: normal;
+        word-spacing: 0px;
+    
+        /* Color & Background */
+    
+        color: rgba(255, 255, 255, 0.7);
+    
+        /* Box */
+        height: 21.0069px;
+        width: 28.3102px;
+        border: 0px none rgba(255, 255, 255, 0.7);
+        border-top: 0px none rgba(255, 255, 255, 0.7);
+        border-right: 0px none rgba(255, 255, 255, 0.7);
+        border-bottom: 0px none rgba(255, 255, 255, 0.7);
+        border-left: 0px none rgba(255, 255, 255, 0.7);
+        margin: 0px;
+        padding: 0px;
+        max-height: none;
+        min-height: auto;
+        max-width: none;
+        min-width: auto;
+    
+      
+       
+    }
+    footer{ 
+        margin-top: 45px;
+        margin-bottom: 40px;
+        padding: 30px;
+    }
+
+footer span{
+   
+	font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	letter-spacing: normal;
+	line-height: normal;
+	text-decoration: none solid rgba(255, 255, 255, 0.7);
+	text-align: start;
+	text-indent: 0px;
+	text-transform: none;
+	vertical-align: baseline;
+	white-space: normal;
+	word-spacing: 0px;
+
+	/* Color & Background */
+	background-attachment: scroll;
+	background-color: rgba(0, 0, 0, 0);
+	background-image: none;
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	color: rgba(255, 255, 255, 0.7);
+
+	/* Box */
+	height: auto;
+	width: auto;
+	border: 0px none rgba(255, 255, 255, 0.7);
+	border-top: 0px none rgba(255, 255, 255, 0.7);
+	border-right: 0px none rgba(255, 255, 255, 0.7);
+	border-bottom: 0px none rgba(255, 255, 255, 0.7);
+	border-left: 0px none rgba(255, 255, 255, 0.7);
+	
+	max-height: none;
+	min-height: 0px;
+	max-width: none;
+	min-width: 0px;
+
+	/* Positioning */
+	position: static;
+	top: auto;
+	bottom: auto;
+	right: auto;
+	left: auto;
+	float: none;
+	display: inline;
+	clear: none;
+	z-index: auto;
+
+	/* List */
+	list-style-image: none;
+	list-style-type: disc;
+	list-style-position: outside;
+
+	/* Table */
+	border-collapse: separate;
+	border-spacing: 0px 0px;
+	caption-side: top;
+	empty-cells: show;
+	table-layout: auto;
+
+	/* Miscellaneous */
+	overflow: visible;
+	cursor: auto;
+	visibility: visible;
+
+	
+}
+#l{
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 21px;
+       
+       
+        text-indent: 0px;
+        text-transform: none;
+        vertical-align: baseline;
+        white-space: normal;
+        word-spacing: 0px;
+    
+        /* Color & Background */
+    
+        color: rgba(255, 255, 255, 0.7);
+    padding-bottom: 40px;
+    
+}
